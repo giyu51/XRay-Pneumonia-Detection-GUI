@@ -28,7 +28,7 @@ Below are some screenshots from the app, giving you a glimpse of its user interf
 |Loading Screen![loading screen](./images/loading-screen-example.png)|Menu![loading screen](./images/screen-menu-example.png)|
 |Prediction ![loading screen](./images/screen-normal-example.png)|Prediction ![loading screen](./images/screen-pneumonia-example.png)|
 |Save path selection![loading screen](./images/path-selection-example.png)|Model Information ![loading screen](./images/model-info-example.png)|
-|The exported image appears as follows: ![](./images/export-example.png)|
+|The exported image should appear as follows: ![](./images/export-example.png)|
 
 
 
