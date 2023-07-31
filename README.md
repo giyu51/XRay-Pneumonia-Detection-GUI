@@ -1,5 +1,5 @@
 # :microscope: XRay-Pneumonia-Detection-GUI
-### :warning: To download the model, please refer to the [Usage Section](#hammer_and_wrench-usage) for detailed instructions.
+### :warning: To download the pretrained model, please refer to the [Usage Section](#hammer_and_wrench-usage) for detailed instructions.
 
 
 
