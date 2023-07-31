@@ -25,6 +25,12 @@ Below are some screenshots from the app, giving you a glimpse of its user interf
 |![loading screen](./images/path-selection-example.png)|![loading screen](./images/model-info-example.png)|
 
 
+The exported image appears as follows:
+
+![](./images/export-example.png)
+
+
+
 ## :book: Dataset
 
 For this project, I utilized a combination of two datasets:
