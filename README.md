@@ -104,6 +104,8 @@ Based on the observed graph and confusion matrix, the model exhibits superior pe
 
 To run this project, you need to have the following dependencies installed:
 
+-   🐍 [Python](https://www.python.org/downloads/): Python is a programming language used by this project.
+
 - 📦 [pip](https://pip.pypa.io/en/stable/): A package manager for installing Python libraries and packages.
 
 - 🧠 [TensorFlow](https://www.tensorflow.org/): An open-source machine learning framework used for training the X-ray pneumonia classification model.
