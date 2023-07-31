@@ -32,6 +32,12 @@ Below are some screenshots from the app, giving you a glimpse of its user interf
 
 
 
+#### :warning: Bug Reporting and Issue Tracking
+
+If you encounter any **issues** or identify 🐞 **bugs** within the application, please open an issue on GitHub. Your cooperation in **reporting problems** will be **acknowledged** and duly **considered**.
+
+Thank you for your understanding.🤝
+
 ## :book: Dataset
 
 For this project, I utilized a combination of two datasets:
@@ -210,7 +216,7 @@ In a nutshell, this is a simple outline of the actions:
 
 1. **RENAME** ["model-1-[some number]"](#hammer_and_wrench-usage) **----->**   ["model-1"](#hammer_and_wrench-usage)
 
-2. **MOVE** ["model-1"](#hammer_and_wrench-usage) **----->** ["XRay-Pneumonia-Detection-App/assets/"](#hammer_and_wrench-usage)
+2. **MOVE** ["model-1"](#hammer_and_wrench-usage) **----->** ["XRay-Pneumonia-Detection-App/assets/"](./XRay-Pneumonia-Detection-App/assets/)
 
 
 :white_check_mark: Congratulations, you are now all set to proceed!
@@ -221,10 +227,14 @@ If you want to use the ready-to-use application, follow these steps:
 1. Copy the entire GitHub project to your local directory.
 2. Navigate to the "XRay-Pneumonia-Detection-App" folder.
 3. Run [main-GUI.py](./XRay-Pneumonia-Detection-App/main-GUI.py) to launch the user-friendly GUI application.
+
     ```shell
     python3 main-GUI.py     # for Linux/Mac
+    ```
+    or
+    
+    ```shell
     python main-GUI.py      # for Windows
-
     ```
 
 :white_check_mark: To utilize the program, wait for it to load completely, and then drag and drop your image onto the window. Upon doing so, you will observe the following interface:
