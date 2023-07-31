@@ -25,7 +25,7 @@ Below are some screenshots from the app, giving you a glimpse of its user interf
 
 |       |           |
 |-------|-----------|
-|Loading Screen![loading screen](./images/loading-screen-example.png)|![loading screen](./images/screen-menu-example.png)|
+|Loading Screen![loading screen](./images/loading-screen-example.png)|Main Menu![loading screen](./images/screen-menu-example.png)|
 |Prediction ![loading screen](./images/screen-normal-example.png)|Prediction ![loading screen](./images/screen-pneumonia-example.png)|
 |Save path selection![loading screen](./images/path-selection-example.png)|Model Information ![loading screen](./images/model-info-example.png)|
 |The exported image appears as follows: ![](./images/export-example.png)|
@@ -136,6 +136,7 @@ To run this project, you need to have the following dependencies installed:
 sudo apt-get update
 sudo apt-get install python3
 sudo apt-get install python3-pip
+python3 -m pip install --upgrade pip
 pip3 install numpy
 pip3 install matplotlib
 pip3 install tensorflow
@@ -152,6 +153,7 @@ pip3 install kivymd
 sudo dnf update
 sudo dnf install python3
 sudo dnf install python3-pip
+python3 -m pip install --upgrade pip
 pip3 install numpy
 pip3 install matplotlib
 pip3 install tensorflow
@@ -175,6 +177,10 @@ pip3 install kivymd
     - By default, Python comes with pip installed. You can check it by opening the Command Prompt and running:
     ```cmd
         pip --version
+    ```
+    - Upgrade pip to its latest version:
+    ```cmd   
+        python -m pip install --upgrade pip
     ```
 3. **Modules:**
     ```shell
