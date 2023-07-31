@@ -1,0 +1,5 @@
+MODEL_LINK: https://drive.google.com/drive/folders/1w2P1wKnjrXs57Wzv9Af8BEREdL3eTEui?usp=sharing
+DATASET_LINK: https://drive.google.com/drive/folders/1T6-OsnuSFl3TwE5U-7u8cR1WRg9427M9?usp=sharing
+
+
+Please ensure that you carefully read and follow the instructions provided in the README.md file.
