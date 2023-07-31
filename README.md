@@ -214,9 +214,11 @@ pip3 install kivymd
 
 In a nutshell, this is a simple outline of the actions:
 
-1. **RENAME** ["model-1-[some number]"](#hammer_and_wrench-usage) **----->**   ["model-1"](#hammer_and_wrench-usage)
+1. **DOWNLOAD** model using this [link](https://drive.google.com/drive/folders/1w2P1wKnjrXs57Wzv9Af8BEREdL3eTEui?usp=sharing) 
 
-2. **MOVE** ["model-1"](#hammer_and_wrench-usage) **----->** ["XRay-Pneumonia-Detection-App/assets/"](./XRay-Pneumonia-Detection-App/assets/)
+2. **EXTRACTION:** ["model-1-[some number].zip"](#hammer_and_wrench-usage) **----->** ["model-1-[some number]/"](#hammer_and_wrench-usage)
+
+3. **MOVE** ["model-1"](#hammer_and_wrench-usage) from ["model-1-[some number]/"](#hammer_and_wrench-usage) **----->** ["XRay-Pneumonia-Detection-App/assets/"](./XRay-Pneumonia-Detection-App/assets/)
 
 
 :white_check_mark: Congratulations, you are now all set to proceed!
