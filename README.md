@@ -132,6 +132,7 @@ pip3 install matplotlib
 pip3 install tensorflow
 pip3 install opencv-python
 pip3 install kivy
+pip3 install kivymd
 
 ```
 
@@ -147,6 +148,7 @@ pip3 install matplotlib
 pip3 install tensorflow
 pip3 install opencv-python
 pip3 install kivy
+pip3 install kivymd
 
 ```
 
@@ -167,11 +169,12 @@ pip3 install kivy
     ```
 3. **Modules:**
     ```shell
-        pip3 install numpy
-        pip3 install matplotlib
-        pip3 install tensorflow
-        pip3 install opencv-python
-        pip3 install kivy
+        pip install numpy
+        pip install matplotlib
+        pip install tensorflow
+        pip install opencv-python
+        pip install kivy
+        pip install kivymd
     ```
 
 `After following these steps, simply copy the repository to your preferred directory.`
@@ -181,9 +184,10 @@ pip3 install kivy
 
 [MODEL_LINK](https://drive.google.com/drive/folders/1w2P1wKnjrXs57Wzv9Af8BEREdL3eTEui?usp=sharing)
 
-:stop_sign: After extracting, you will find the "model-1" directory. To utilize the GUI app, simply move this directory to the "[assets](./XRay-Pneumonia-Detection-App/assets/)" folder within the app's directory "[XRay-Pneumonia-Detection-App/](./XRay-Pneumonia-Detection-App/)":
+:stop_sign: After extracting, you will need to rename the model directory to  "model-1". To utilize the GUI app, simply move this directory to the "[assets](./XRay-Pneumonia-Detection-App/assets/)" folder within the app's directory "[XRay-Pneumonia-Detection-App/](./XRay-Pneumonia-Detection-App/)":
 
-> "model-1" -----> "XRay-Pneumonia-Detection-App/assets/"
+> RENAME    "model-1-31238912391"  ----->   "model-1"
+> MOVE      "model-1" -----> "XRay-Pneumonia-Detection-App/assets/"
 
 :white_check_mark: Congratulations, you are now all set to proceed!
 
