@@ -205,9 +205,12 @@ pip3 install kivymd
 
 :stop_sign: **4**. To utilize the GUI app, simply move this **"model-1"** directory  to the "[assets](./XRay-Pneumonia-Detection-App/assets/)" folder within the app's directory "[XRay-Pneumonia-Detection-App/](./XRay-Pneumonia-Detection-App/)":
 
-> RENAME    "model-1-[some number]"  ----->   "model-1"
 
-> MOVE      "model-1" -----> "XRay-Pneumonia-Detection-App/assets/"
+In a nutshell, this is a simple outline of the actions:
+
+1. **RENAME** ["model-1-[some number]"]() **----->**   ["model-1"]()
+
+2. **MOVE** ["model-1"]() **----->** ["XRay-Pneumonia-Detection-App/assets/"]()
 
 
 :white_check_mark: Congratulations, you are now all set to proceed!
