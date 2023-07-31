@@ -208,9 +208,9 @@ pip3 install kivymd
 
 In a nutshell, this is a simple outline of the actions:
 
-1. **RENAME** ["model-1-[some number]"]() **----->**   ["model-1"]()
+1. **RENAME** ["model-1-[some number]"](#hammer_and_wrench-usage) **----->**   ["model-1"](#hammer_and_wrench-usage)
 
-2. **MOVE** ["model-1"]() **----->** ["XRay-Pneumonia-Detection-App/assets/"]()
+2. **MOVE** ["model-1"](#hammer_and_wrench-usage) **----->** ["XRay-Pneumonia-Detection-App/assets/"](#hammer_and_wrench-usage)
 
 
 :white_check_mark: Congratulations, you are now all set to proceed!
