@@ -1,4 +1,9 @@
 # :microscope: XRay-Pneumonia-Detection-GUI
+###:warning: To download the model, please refer to the Usage Section for detailed instructions.
+
+
+
+
 
 ## Overview
 **XRay-Pneumonia-Detection-GUI** is an deep learning project designed to automate pneumonia detection in X-ray images. By utilizing Convolutional Neural Networks (CNNs), this project classifies X-ray images into '**Normal**' and '**Pneumonia**' categories. The '**Pneumonia**' class includes both *bacterial* and *viral* pneumonia cases, making it a binary classification task. 
