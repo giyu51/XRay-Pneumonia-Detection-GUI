@@ -180,15 +180,17 @@ pip3 install kivymd
 `After following these steps, simply copy the repository to your preferred directory.`
 
 ## :hammer_and_wrench: Usage
-:stop_sign: 1. Before using the model, you must download it using the following link and then extract it: 
+:stop_sign: **1**. Before using the model, you must download it using the following link and then extract it: 
 
 [MODEL_LINK](https://drive.google.com/drive/folders/1w2P1wKnjrXs57Wzv9Af8BEREdL3eTEui?usp=sharing)
 
-:stop_sign: 2. After extracting, you will need to rename the model directory to  "model-1". 
+:stop_sign: **2**. Once the extraction is complete, you will find a folder named **"model-1-[some numbers]"**. 
 
-:stop_sign: 3. To utilize the GUI app, simply move this directory to the "[assets](./XRay-Pneumonia-Detection-App/assets/)" folder within the app's directory "[XRay-Pneumonia-Detection-App/](./XRay-Pneumonia-Detection-App/)":
+:stop_sign: **3**. Inside this folder, there will be a subfolder named **"model-1"** which contains the necessary files for the model.
 
-> RENAME    "model-1-31238912391"  ----->   "model-1"
+:stop_sign: **4**. To utilize the GUI app, simply move this **"model-1"** directory  to the "[assets](./XRay-Pneumonia-Detection-App/assets/)" folder within the app's directory "[XRay-Pneumonia-Detection-App/](./XRay-Pneumonia-Detection-App/)":
+
+> RENAME    "model-1-[some number]"  ----->   "model-1"
 
 > MOVE      "model-1" -----> "XRay-Pneumonia-Detection-App/assets/"
 
