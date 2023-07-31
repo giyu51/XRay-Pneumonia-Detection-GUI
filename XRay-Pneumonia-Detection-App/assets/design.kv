@@ -1,0 +1,355 @@
+
+<LoadingLayout>:
+    MDBoxLayout:
+        opacity: .5
+        Image:
+            source: "assets/intro-back.jpg"
+
+    MDLabel:
+        text: "Loading..."
+        halign: "center"
+        font_size: 64
+
+<DropFileLayout>:
+    MDBoxLayout:
+        orientation: "vertical"
+        MDLabel:
+            text: "Drag and Drop an image here."
+            halign: "center"
+            valign: "middle"
+            size_hint: 1, .1
+            font_size: 24
+            color: 1, 0.85, 0.25, 1 
+            
+        Image:
+            id: _selected_image_
+    
+    MDWidget:
+        size_hint: .02, 1
+        canvas.before:
+            Color: 
+                rgba: 0, 0.65, 0.73, 1
+            Rectangle:
+                pos: self.pos
+                size: self.size
+
+    MDBoxLayout:
+        orientation: 'vertical'
+        
+        MDBoxLayout:
+            size_hint: 1, .1
+            MDWidget:
+
+            MDRectangleFlatIconButton:
+                size_hint: .8, None
+                icon: "information-outline"
+                text: "Model Info"
+                font_size: 24
+                pos_hint: {"center_y": 0.5}
+                text_color: 0, 0.65, 0.73, 1
+                line_color: 0, 0.65, 0.73, 1
+                on_press: app.btnModelInfo(self)
+
+            MDWidget:
+        
+        MDBoxLayout:
+            size_hint: 1, .4
+            orientation: "vertical"
+            
+            MDLabel:
+                text: 'PROBABILITIES'
+                color: 0, .88, 1, 1
+                font_size: 32
+                halign: "center"
+
+            MDBoxLayout:
+                orientation: "vertical"
+                canvas.before:
+                    Color:
+                        rgba: .04, .04, .04, 1 
+                    Rectangle:
+                        pos: self.pos
+                        size: self.size
+
+                MDBoxLayout:
+                    MDLabel:
+                        text: "NO Pneumonia"
+                        color: 1, 0.85, 0.25, 1 
+                        font_size: 24
+                        halign: "center"
+
+                    MDLabel:
+                        id: _label_normal_percentage_
+                        text: "0.0"
+                        font_size: 24
+                        halign: "center"
+
+                MDBoxLayout:
+                    MDLabel:
+                        text: "Pneumonia"
+                        color: 1, 0.85, 0.25, 1 
+                        font_size: 24
+                        halign: "center"
+
+                    MDLabel:
+                        id: _label_pneumonia_percentage_
+                        text: "0.0"
+                        font_size: 24
+                        halign: "center"
+
+        MDBoxLayout:
+            orientation: "vertical"
+            size_hint: 1, .4
+
+            MDLabel:
+                text: 'RESULTS'
+                font_size: 32
+                color: 0, .88, 1, 1
+                halign: "center"
+
+            MDBoxLayout:
+                canvas.before:
+                    Color:
+                        rgba: .04, .04, .04 ,1  
+                    Rectangle:
+                        pos: self.pos
+                        size: self.size
+
+                MDLabel:
+                    text: "LABEL"
+                    font_size: 24
+                    color: 1, 0.85, 0.25, 1 
+                    halign: "center"
+
+                MDLabel:
+                    id: _label_class_
+                    font_size: 24
+                    halign: "center"
+
+        MDBoxLayout:
+            size_hint: 1, .1
+            MDWidget:
+   
+            MDRectangleFlatIconButton:
+                icon: "refresh"
+                text: "Analyze Again"
+                font_size: 24
+                size_hint: .3, None
+                pos_hint: {"center_y": 0.5} 
+                on_press: app.btnAnalyzeAgain(self)
+                text_color: 0, 0.65, 0.73, 1
+                line_color: 0, 0.65, 0.73, 1
+
+            MDWidget:
+   
+            MDRectangleFlatIconButton:
+                icon: "export-variant"
+                text: "Export"
+                font_size: 24
+                size_hint: .3, None
+                pos_hint: {"center_y": 0.5}
+                on_press: app.btnExportResults(self)
+                text_color: 0, 0.65, 0.73, 1
+                line_color: 0, 0.65, 0.73, 1
+
+            MDWidget:
+
+<ModelInfoLayout>:
+    orientation: "vertical"
+    padding: ('20dp', '20dp', '20dp', '20dp')
+
+    MDRectangleFlatIconButton:  
+        text: 'Close'
+        icon: "close"
+        size_hint: .2, None
+        pos_hint: {"x": .8}
+        on_press: app.btnReturnMainWindow(self)
+
+    MDBoxLayout:
+        line_color: 0, 0.65, 0.73, 1
+
+        MDLabel:
+            text: "Model"
+            halign: "center"
+            valign: "middle"
+            font_size: 24
+            line_color: 0, 0.65, 0.73, 1
+
+        MDLabel:
+            id: _label_model_name_
+            halign: "center"
+            valign: "middle"
+            font_size: 16
+
+    MDBoxLayout:
+        line_color: 0, 0.65, 0.73, 1
+
+        MDLabel:
+            text: "Full Path:"
+            halign: "center"
+            valign: "middle"
+            font_size: 24
+            line_color: 0, 0.65, 0.73, 1
+
+        TextInput:
+            id: _label_full_model_path_
+            text: "None"
+            readonly: True
+            focus: False
+            background_color: 0, 0, 0, 0
+            foreground_color: 1, 1, 1, 1
+            halign: "center"
+            valign: "middle"
+            font_size: 16
+
+    MDBoxLayout:
+        line_color: 0, 0.65, 0.73, 1
+
+        MDLabel:
+            text: "Training\nPerformance"
+            halign: "center"
+            valign: "middle"
+            font_size: 24
+            line_color: 0, 0.65, 0.73, 1
+
+        MDBoxLayout:
+            orientation: "vertical"
+
+            MDBoxLayout:
+                MDLabel:
+                    text: 'Loss'                    
+                    halign: "center"
+                    valign: "middle"
+                    font_size: 16
+                MDLabel:
+                    id: _label_model_train_loss_
+                    text: "None"
+                    halign: "center"
+                    valign: "middle"
+                    font_size: 16
+            MDBoxLayout:
+                MDLabel:
+                    text: "Accuracy"                    
+                    halign: "center"
+                    valign: "middle"
+                    font_size: 16
+                MDLabel:
+                    id: _label_model_train_acc_
+                    text: "None"
+                    halign: "center"
+                    valign: "middle"
+                    font_size: 16
+
+    MDBoxLayout:
+        line_color: 0, 0.65, 0.73, 1
+
+        MDLabel:
+            text: "Test\nPerformance"
+            halign: "center"
+            valign: "middle"
+            font_size: 24
+            line_color: 0, 0.65, 0.73, 1
+
+        MDBoxLayout:
+            orientation: "vertical"
+
+            MDBoxLayout:
+                MDLabel:
+                    text: 'Loss'                    
+                    halign: "center"
+                    valign: "middle"
+                    font_size: 16
+                MDLabel:
+                    id: _label_model_test_loss_
+                    text: "None"
+                    halign: "center"
+                    valign: "middle"
+                    font_size: 16
+            MDBoxLayout:
+                MDLabel:
+                    text: "Accuracy"                    
+                    halign: "center"
+                    valign: "middle"
+                    font_size: 16
+                MDLabel:
+                    id: _label_model_test_acc_
+                    text: "None"
+                    halign: "center"
+                    valign: "middle"
+                    font_size: 16
+
+    MDBoxLayout:
+        line_color: 0, 0.65, 0.73, 1
+
+        MDLabel:
+            text: "Validation\nPerformance"
+            halign: "center"
+            valign: "middle"
+            font_size: 24
+            line_color: 0, 0.65, 0.73, 1
+
+        MDBoxLayout:
+            orientation: "vertical"
+
+            MDBoxLayout:
+                MDLabel:
+                    text: 'Loss'                    
+                    halign: "center"
+                    valign: "middle"
+                    font_size: 16
+                MDLabel:
+                    id: _label_model_val_loss_
+                    text: "None"
+                    halign: "center"
+                    valign: "middle"
+                    font_size: 16
+            MDBoxLayout:
+                MDLabel:
+                    text: "Accuracy"                    
+                    halign: "center"
+                    valign: "middle"
+                    font_size: 16
+                MDLabel:
+                    id: _label_model_val_acc_
+                    text: "None"
+                    halign: "center"
+                    valign: "middle"
+                    font_size: 16
+
+    MDBoxLayout:
+        line_color: 0, 0.65, 0.73, 1
+
+        MDLabel:
+            text: "Other"
+            halign: "center"
+            valign: "middle"
+            font_size: 24
+            line_color: 0, 0.65, 0.73, 1
+
+        MDBoxLayout:
+            orientation: "vertical"
+
+            MDBoxLayout:
+                MDLabel:
+                    text: 'Epochs'                    
+                    halign: "center"
+                    valign: "middle"
+                    font_size: 16
+                MDLabel:
+                    id: _label_model_trained_epochs_
+                    text: "None"
+                    halign: "center"
+                    valign: "middle"
+                    font_size: 16
+            MDBoxLayout:
+                MDLabel:
+                    text: "Trained\nParameters"                    
+                    halign: "center"
+                    valign: "middle"
+                    font_size: 16
+                MDLabel:
+                    id: _label_model_trained_params_
+                    text: "None"
+                    halign: "center"
+                    valign: "middle"
+                    font_size: 16
