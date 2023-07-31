@@ -116,6 +116,13 @@ To run this project, you need to have the following dependencies installed:
 
 - 📱 [Kivy](https://kivy.org/): An open-source Python library for developing cross-platform GUI applications.
 
+- 📱 [KivyMD](https://kivymd.readthedocs.io/): A library that provides Material Design components for Kivy.
+
+
+
+
+
+
 
 
 ## :inbox_tray: Installation
@@ -379,4 +386,4 @@ This project is licensed under the MIT License 📜.
 - Gratitude to **TensorFlow** and **NumPy** for their powerful capabilities in handling calculations and building neural networks.
 - Appreciation to **OpenCV** for its invaluable contributions in image analysis.
 - Many thanks to **Matplotlib** for enabling us to visualize the processed images effectively.
-- Lastly, a shout-out to **Kivy** **Python** for providing the platform to create a user-friendly GUI for the application.
+- Lastly, a shout-out to **Kivy** **Python** and **KivyMD** for providing the platform and Material Design components to create a user-friendly GUI for the application.
