@@ -40,7 +40,7 @@ For this project, I utilized a combination of two datasets:
 
 2. Curated Dataset for COVID-19 Posterior-Anterior Chest Radiography Images (X-Rays) from **Mendeley Data**: [Dataset Link](https://data.mendeley.com/datasets/9xkhgts2s6/4)
 
-You can obtain my combined dataset by accessing the following link:
+:incoming_envelope: You can obtain my combined dataset by accessing the following link:
 
 [DATASET_LINK](https://drive.google.com/drive/folders/1T6-OsnuSFl3TwE5U-7u8cR1WRg9427M9?usp=sharing)
 
@@ -180,16 +180,22 @@ pip3 install kivymd
 `After following these steps, simply copy the repository to your preferred directory.`
 
 ## :hammer_and_wrench: Usage
-:stop_sign: Before using the model, you must download it using the following link and then extract it: 
+:stop_sign: 1. Before using the model, you must download it using the following link and then extract it: 
 
 [MODEL_LINK](https://drive.google.com/drive/folders/1w2P1wKnjrXs57Wzv9Af8BEREdL3eTEui?usp=sharing)
 
-:stop_sign: After extracting, you will need to rename the model directory to  "model-1". To utilize the GUI app, simply move this directory to the "[assets](./XRay-Pneumonia-Detection-App/assets/)" folder within the app's directory "[XRay-Pneumonia-Detection-App/](./XRay-Pneumonia-Detection-App/)":
+:stop_sign: 2. After extracting, you will need to rename the model directory to  "model-1". 
+
+:stop_sign: 3. To utilize the GUI app, simply move this directory to the "[assets](./XRay-Pneumonia-Detection-App/assets/)" folder within the app's directory "[XRay-Pneumonia-Detection-App/](./XRay-Pneumonia-Detection-App/)":
 
 > RENAME    "model-1-31238912391"  ----->   "model-1"
+
 > MOVE      "model-1" -----> "XRay-Pneumonia-Detection-App/assets/"
 
+
 :white_check_mark: Congratulations, you are now all set to proceed!
+
+---
 
 If you want to use the ready-to-use application, follow these steps:
 1. Copy the entire GitHub project to your local directory.
