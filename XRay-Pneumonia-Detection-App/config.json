@@ -1,0 +1,31 @@
+{
+
+    "model":{
+        "model_file_path": "./assets/model-1",
+        "labels": ["NORMAL", "PNEUMONIA"]
+    },
+    "window":{
+        "window_width": 800,
+        "window_height": 600,
+        "window_theme": "Dark"
+        
+    },
+
+    "other":{
+        "trained_epochs":5,
+        "trained_params":17167106
+    },
+
+    "train":{
+        "loss": 0.13,
+        "accuracy": 0.96
+    },
+    "test":{
+        "loss": 0.74,
+        "accuracy": 0.8
+    },
+    "val":{
+        "loss": 0.13,
+        "accuracy": 0.95
+    }
+}
