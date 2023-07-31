@@ -210,6 +210,11 @@ If you want to use the ready-to-use application, follow these steps:
 1. Copy the entire GitHub project to your local directory.
 2. Navigate to the "XRay-Pneumonia-Detection-App" folder.
 3. Run [main-GUI.py](./XRay-Pneumonia-Detection-App/main-GUI.py) to launch the user-friendly GUI application.
+    ```shell
+    python3 main-GUI.py     # for Linux/Mac
+    python main-GUI.py      # for Windows
+
+    ```
 
 :white_check_mark: To utilize the program, wait for it to load completely, and then drag and drop your image onto the window. Upon doing so, you will observe the following interface:
 
@@ -318,23 +323,23 @@ Inside the [XRay-Pneumonia-Detection-App/](./XRay-Pneumonia-Detection-App/) dire
 
 This is a Python script using the Kivy and KivyMD libraries to create a Graphical User Interface (GUI) for detecting pneumonia in X-ray images using a trained TensorFlow model. Let's go through the code and explain its functionality.
 
-### Imports :package:
+#### Imports :package:
 
 The script starts by importing the necessary modules from various libraries, including Kivy, KivyMD, and other standard Python modules like threading, json, os, etc.
 
-### Load KV File :page_with_curl:
+#### Load KV File :page_with_curl:
 
 The `Builder.load_file()` command is used to load the Kivy Language file (KV) that defines the GUI layout and design.
 
-### Configuration File :wrench:
+#### Configuration File :wrench:
 
 The script uses a JSON configuration file (`config.json`) to set various parameters and paths for the application, such as the model file path, window size, window theme, etc. The `load_config()` method reads and extracts these values from the config file.
 
-### Layout Classes :art:
+#### Layout Classes :art:
 
 The script defines three classes for different layouts (`DropFileLayout`, `LoadingLayout`, and `ModelInfoLayout`) used in the application. These classes define the structure of the GUI elements.
 
-### Main Application Class - `PneumoniaDetectionApp` :computer:
+#### Main Application Class - `PneumoniaDetectionApp` :computer:
 
 The `PneumoniaDetectionApp` class is the main application class that inherits from `MDApp` (a class from KivyMD library for creating Material Design applications).
 
@@ -364,11 +369,11 @@ While starting the Kivy window, non-essential for initiating kivy window, second
 
 The `exportPNG()` method draws text data on the analyzed image and exports it with the classification results.
 
-### Entry Point :checkered_flag:
+#### Entry Point :checkered_flag:
 
 The `if __name__ == "__main__":` block is the entry point of the script. It creates an instance of `PneumoniaDetectionApp` and runs the Kivy application using `kivy_app.run()`.
 
-### Additional Note :memo:
+#### Additional Note :memo:
 
 The script attempts to remove the exported image file (if any) after the Kivy application is closed.
 
