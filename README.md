@@ -183,8 +183,9 @@ pip3 install kivy
 
 :stop_sign: After extracting, you will find the "model-1" directory. To utilize the GUI app, simply move this directory to the "[assets](./XRay-Pneumonia-Detection-App/assets/)" folder within the app's directory "[XRay-Pneumonia-Detection-App/](./XRay-Pneumonia-Detection-App/)":
 
-:white_check_mark: Congratulations, you are now all set to proceed!
 > "model-1" -----> "XRay-Pneumonia-Detection-App/assets/"
+
+:white_check_mark: Congratulations, you are now all set to proceed!
 
 If you want to use the ready-to-use application, follow these steps:
 1. Copy the entire GitHub project to your local directory.
