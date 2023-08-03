@@ -1,7 +1,7 @@
 {
 
     "model":{
-        "model_file_path": "./assets/model-1",
+        "model_file_path": "./assets/model-2",
         "labels": ["NORMAL", "PNEUMONIA"]
     },
     "window":{
@@ -12,20 +12,20 @@
     },
 
     "other":{
-        "trained_epochs":5,
-        "trained_params":17167106
+        "trained_epochs":7,
+        "trained_params":22541826
     },
 
     "train":{
         "loss": 0.13,
-        "accuracy": 0.96
+        "accuracy": 0.95
     },
     "test":{
-        "loss": 0.74,
-        "accuracy": 0.8
+        "loss": 0.45,
+        "accuracy": 0.83
     },
     "val":{
-        "loss": 0.13,
-        "accuracy": 0.95
+        "loss": 0.15,
+        "accuracy": 0.93
     }
 }
