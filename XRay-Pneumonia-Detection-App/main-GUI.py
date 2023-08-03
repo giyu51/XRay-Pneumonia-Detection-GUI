@@ -152,7 +152,7 @@ class PneumoniaDetectionApp(MDApp):
 
         # Load the model using TensorFlow
         self.model = self.modules_tf.keras.models.load_model(
-            self.full_model_path)
+            self.full_model_path, compile=False)
 
         # Schedule the opening of the main window after loading the model
         # (Note: We are using Kivy's Clock to schedule the function)
