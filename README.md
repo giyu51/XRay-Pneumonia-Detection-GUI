@@ -202,7 +202,7 @@ pip3 install kivymd
 
 ## :hammer_and_wrench: Usage
 
-#### :open_file_folder: Model Downloading
+### :open_file_folder: Model Downloading
 :stop_sign: **1**. Before using the app , you must download neural network model using the following link and then extract it: 
 
 [MODEL_LINK](https://drive.google.com/file/d/1nQd1YZzLOa8R6WgAesXl_YCGuafEsXGt/view?usp=sharing)
@@ -293,7 +293,7 @@ If you want to use the ready-to-use application, follow these steps:
 :white_check_mark: To utilize the program, wait for it to load completely, and then drag and drop your image onto the window. Upon doing so, you will observe the following interface:
 
 ---
-#### :hammer: Training Your Own Model
+### :hammer: Training Your Own Model
 However, if you are interested in training your own model using the provided notebook, you have the flexibility to make changes as per your specific requirements. 
 For instance, you can modify the 
 - dataset directory
