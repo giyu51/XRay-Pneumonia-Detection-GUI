@@ -220,7 +220,29 @@ In a nutshell, this is a simple outline of the actions:
 
 3. **MOVE** ["model-N"](#hammer_and_wrench-usage) from ["model-N-[some number]/"](#hammer_and_wrench-usage) **----->** ["XRay-Pneumonia-Detection-App/assets/"](./XRay-Pneumonia-Detection-App/assets/)
 
+---
 
+The Directory structure should look like this:
+
+```shell
+
+XRay-Pneumonia-Detection-App/
+                            ├── assets/
+                            │       ├── design.kv
+                            |       |
+                            |       ├── intro-back.jpg
+                            |       |
+                            │       └── model-N/
+                            |                   |
+                            |                   └─ [model-content]
+                            |
+                            |
+                            ├── config.json
+                            |
+                            └── main-GUI.py
+```
+
+"**model-N**" can refer to model-1, model-2 etc. **N** refers to a number of version of model. 
 
 :white_check_mark: Congratulations, you are now all set to proceed!
 
