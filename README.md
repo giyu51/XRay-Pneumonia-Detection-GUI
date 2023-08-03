@@ -88,13 +88,13 @@ The model's performance on the dataset is as follows:
 
 ```json
 Train-loss:         0.13
-Train-accuracy:     0.96
+Train-accuracy:     0.95
 
-Test-loss:          0.74
-Test-accuracy:      0.8
+Test-loss:          0.45
+Test-accuracy:      0.83
 
-Val-loss:           0.13
-Val-accuracy:       0.95
+Val-loss:           0.15
+Val-accuracy:       0.93
 ```
 |       |           |
 |-------|-----------|
