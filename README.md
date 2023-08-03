@@ -48,7 +48,7 @@ For this project, I utilized a combination of two datasets:
 
 :incoming_envelope: You can obtain my combined dataset by accessing the following link:
 
-[DATASET_LINK](https://drive.google.com/drive/folders/1T6-OsnuSFl3TwE5U-7u8cR1WRg9427M9?usp=sharing)
+[DATASET_LINK](https://drive.google.com/file/d/1-iBg3RaHIUXhwsTv3wbv6jmEEPUU9iSI/view?usp=sharing)
 
 ## :rocket: Model Description
 
@@ -201,9 +201,9 @@ pip3 install kivymd
 `After following these steps, simply copy the repository to your preferred directory.`
 
 ## :hammer_and_wrench: Usage
-:stop_sign: **1**. Before using the model, you must download it using the following link and then extract it: 
+:stop_sign: **1**. Before using the app , you must download it using the following link and then extract it: 
 
-[MODEL_LINK](https://drive.google.com/drive/folders/1w2P1wKnjrXs57Wzv9Af8BEREdL3eTEui?usp=sharing)
+[MODEL_LINK](https://drive.google.com/file/d/1nQd1YZzLOa8R6WgAesXl_YCGuafEsXGt/view?usp=sharing)
 
 :stop_sign: **2**. Once the extraction is complete, you will find a folder named **"model-N (N is number of model version)"**. 
 
@@ -219,6 +219,7 @@ In a nutshell, this is a simple outline of the actions:
 2. **EXTRACTION:** ["model-N-[some number].zip"](#hammer_and_wrench-usage) **----->** ["model-N-[some number]/"](#hammer_and_wrench-usage)
 
 3. **MOVE** ["model-N"](#hammer_and_wrench-usage) from ["model-N-[some number]/"](#hammer_and_wrench-usage) **----->** ["XRay-Pneumonia-Detection-App/assets/"](./XRay-Pneumonia-Detection-App/assets/)
+
 
 
 :white_check_mark: Congratulations, you are now all set to proceed!
