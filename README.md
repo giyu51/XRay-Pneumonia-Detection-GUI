@@ -205,20 +205,27 @@ pip3 install kivymd
 
 [MODEL_LINK](https://drive.google.com/file/d/1nQd1YZzLOa8R6WgAesXl_YCGuafEsXGt/view?usp=sharing)
 
-:stop_sign: **2**. Once the extraction is complete, you will find a folder named **"model-N-[some numbers]" (N is a number of model version)**. 
+:stop_sign: **2**. Once the extraction is complete, you will find a folder named **"model-N" (N is a number of model version)**. Please make sure that the directory includes all the essential files for the model. The structure should be similar, if not identical, to the following:
+```shell
+    model-2/
+        ├── assets/
+        ├── variables/
+        ├── fingerprint.pb
+        ├── keras_metadata.pb
+        └── saved_model.pb
 
-:stop_sign: **3**. Inside this folder, there will be a subfolder named **"model-N"** which contains the necessary files for the model.
+```
 
-:stop_sign: **4**. To utilize the GUI app, simply move this **"model-N"** directory  to the "[assets](./XRay-Pneumonia-Detection-App/assets/)" folder within the app's directory "[XRay-Pneumonia-Detection-App/](./XRay-Pneumonia-Detection-App/)":
+:stop_sign: **3**. To utilize the GUI app, simply move this **"model-N"** directory  to the "[assets](./XRay-Pneumonia-Detection-App/assets/)" folder within the app's directory "[XRay-Pneumonia-Detection-App/](./XRay-Pneumonia-Detection-App/)":
 
 
 In a nutshell, this is a simple outline of the actions:
 
 1. **DOWNLOAD** model's zip file using provided abovelink
 
-2. **EXTRACTION:** ["model-N-[some number].zip"](#hammer_and_wrench-usage) **----->** ["model-N-[some number]/"](#hammer_and_wrench-usage)
+2. **EXTRACTION:** ["model-N.zip"](#hammer_and_wrench-usage) **----->** ["model-N/"](#hammer_and_wrench-usage)
 
-3. **MOVE** ["model-N"](#hammer_and_wrench-usage) from ["model-N-[some number]/"](#hammer_and_wrench-usage) **----->** ["XRay-Pneumonia-Detection-App/assets/"](./XRay-Pneumonia-Detection-App/assets/)
+3. **MOVE** ["model-N"](#hammer_and_wrench-usage) **----->** ["XRay-Pneumonia-Detection-App/assets/"](./XRay-Pneumonia-Detection-App/assets/)
 
 ---
 
