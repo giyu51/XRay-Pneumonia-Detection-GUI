@@ -102,7 +102,7 @@ Val-accuracy:       0.95
 |![labels](./images/labels.png)|![confusion matrix](./images/confusion-matrix-example.png)|
 
 
-Based on the observed graph and confusion matrix, the model exhibits superior performance in predicting the `PNEUMONIA` class (98.7%) compared to the `NORMAL` class (50%). However, it is important to note that the model's performance is subject to potential improvements in the future, and further optimization may lead to enhanced accuracy and generalization capabilities.
+Based on the observed graph and confusion matrix, the model exhibits superior performance in predicting the **`PNEUMONIA` class (94%)** compared to the **`NORMAL` class (72.2%)**. However, it is important to note that the model's performance is subject to potential improvements in the future, and further optimization may lead to enhanced accuracy and generalization capabilities.
 
 ⚠️ Please be aware that we are currently working on this project, and there are plans to make further upgrades and improvements in the future.
 
@@ -205,7 +205,7 @@ pip3 install kivymd
 
 [MODEL_LINK](https://drive.google.com/file/d/1nQd1YZzLOa8R6WgAesXl_YCGuafEsXGt/view?usp=sharing)
 
-:stop_sign: **2**. Once the extraction is complete, you will find a folder named **"model-N (N is number of model version)"**. 
+:stop_sign: **2**. Once the extraction is complete, you will find a folder named **"model-N (N is a number of model version)"**. 
 
 :stop_sign: **3**. Inside this folder, there will be a subfolder named **"model-N"** which contains the necessary files for the model.
 
