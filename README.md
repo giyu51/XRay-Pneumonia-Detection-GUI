@@ -205,20 +205,20 @@ pip3 install kivymd
 
 [MODEL_LINK](https://drive.google.com/drive/folders/1w2P1wKnjrXs57Wzv9Af8BEREdL3eTEui?usp=sharing)
 
-:stop_sign: **2**. Once the extraction is complete, you will find a folder named **"model-1-[some numbers]"**. 
+:stop_sign: **2**. Once the extraction is complete, you will find a folder named **"model-N (N is number of model version)"**. 
 
-:stop_sign: **3**. Inside this folder, there will be a subfolder named **"model-1"** which contains the necessary files for the model.
+:stop_sign: **3**. Inside this folder, there will be a subfolder named **"model-N"** which contains the necessary files for the model.
 
-:stop_sign: **4**. To utilize the GUI app, simply move this **"model-1"** directory  to the "[assets](./XRay-Pneumonia-Detection-App/assets/)" folder within the app's directory "[XRay-Pneumonia-Detection-App/](./XRay-Pneumonia-Detection-App/)":
+:stop_sign: **4**. To utilize the GUI app, simply move this **"model-N"** directory  to the "[assets](./XRay-Pneumonia-Detection-App/assets/)" folder within the app's directory "[XRay-Pneumonia-Detection-App/](./XRay-Pneumonia-Detection-App/)":
 
 
 In a nutshell, this is a simple outline of the actions:
 
 1. **DOWNLOAD** model's zip file using this [link](https://drive.google.com/drive/folders/1w2P1wKnjrXs57Wzv9Af8BEREdL3eTEui?usp=sharing) 
 
-2. **EXTRACTION:** ["model-1-[some number].zip"](#hammer_and_wrench-usage) **----->** ["model-1-[some number]/"](#hammer_and_wrench-usage)
+2. **EXTRACTION:** ["model-N-[some number].zip"](#hammer_and_wrench-usage) **----->** ["model-N-[some number]/"](#hammer_and_wrench-usage)
 
-3. **MOVE** ["model-1"](#hammer_and_wrench-usage) from ["model-1-[some number]/"](#hammer_and_wrench-usage) **----->** ["XRay-Pneumonia-Detection-App/assets/"](./XRay-Pneumonia-Detection-App/assets/)
+3. **MOVE** ["model-N"](#hammer_and_wrench-usage) from ["model-N-[some number]/"](#hammer_and_wrench-usage) **----->** ["XRay-Pneumonia-Detection-App/assets/"](./XRay-Pneumonia-Detection-App/assets/)
 
 
 :white_check_mark: Congratulations, you are now all set to proceed!
@@ -228,7 +228,9 @@ In a nutshell, this is a simple outline of the actions:
 If you want to use the ready-to-use application, follow these steps:
 1. Copy the entire GitHub project to your local directory.
 2. Navigate to the "XRay-Pneumonia-Detection-App" folder.
-3. Run [main-GUI.py](./XRay-Pneumonia-Detection-App/main-GUI.py) to launch the user-friendly GUI application.
+3. Configure the "[config.json](./XRay-Pneumonia-Detection-App/config.json)":
+    - Specify the model name, if needed
+4. Run [main-GUI.py](./XRay-Pneumonia-Detection-App/main-GUI.py) to launch the user-friendly GUI application.
 
     ```shell
     python3 main-GUI.py     # for Linux/Mac
@@ -297,7 +299,7 @@ Finally, your configuration file should ressemble the following structure:
 
 {
     "model": {
-        "model_file_path": "./assets/model-1",
+        "model_file_path": "./assets/model-2",
         "labels": ["NORMAL", "PNEUMONIA"]
     },
     "window": {
@@ -335,7 +337,7 @@ Inside the [XRay-Pneumonia-Detection-App/](./XRay-Pneumonia-Detection-App/) dire
 - The model file used to classify images
 - A few images required for application, such as the [intro image](./XRay-Pneumonia-Detection-App/assets/intro-back.jpg).
 
-:warning: The default model name is set to "model-1". If you decide to change it, remember to also update the "model_path" option in the [configuration file](./XRay-Pneumonia-Detection-App/config.json) accordingly.
+:warning: The default model name is set to "model-2". If you decide to change it, remember to also update the "model_path" option in the [configuration file](./XRay-Pneumonia-Detection-App/config.json) accordingly.
 
 
 
