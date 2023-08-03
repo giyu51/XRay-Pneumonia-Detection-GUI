@@ -201,9 +201,17 @@ pip3 install kivymd
 `After following these steps, simply copy the repository to your preferred directory.`
 
 ## :hammer_and_wrench: Usage
+
+#### :open_file_folder: Model Downloading
 :stop_sign: **1**. Before using the app , you must download it using the following link and then extract it: 
 
 [MODEL_LINK](https://drive.google.com/file/d/1nQd1YZzLOa8R6WgAesXl_YCGuafEsXGt/view?usp=sharing)
+
+---
+
+⚠️ If you're not interested in using the app and are more focused on the provided notebook and model, feel free to skip this section and proceed to the **["Training Your Own Model"](#hammer-training-your-own-model)** section.
+
+---
 
 :stop_sign: **2**. Once the extraction is complete, you will find a folder named **"model-N" (N is a number of model version)**. Please make sure that the directory includes all the essential files for the model. The structure should be similar, if not identical, to the following:
 ```shell
@@ -221,11 +229,11 @@ pip3 install kivymd
 
 In a nutshell, this is a simple outline of the actions:
 
-1. **DOWNLOAD** model's zip file using provided abovelink
+1. **DOWNLOAD** model's zip file using provided above link
 
-2. **EXTRACTION:** ["model-N.zip"](#hammer_and_wrench-usage) **----->** ["model-N/"](#hammer_and_wrench-usage)
+2. **EXTRACTION:** ["model-N.zip"](#open_file_folder-model-downloading) **----->** ["model-N/"](#open_file_folder-model-downloading)
 
-3. **MOVE** ["model-N"](#hammer_and_wrench-usage) **----->** ["XRay-Pneumonia-Detection-App/assets/"](./XRay-Pneumonia-Detection-App/assets/)
+3. **MOVE** ["model-N"](#open_file_folder-model-downloading) **----->** ["XRay-Pneumonia-Detection-App/assets/"](./XRay-Pneumonia-Detection-App/assets/)
 
 ---
 
@@ -256,11 +264,13 @@ XRay-Pneumonia-Detection-App/
 ---
 
 If you want to use the ready-to-use application, follow these steps:
-1. Copy the entire GitHub project to your local directory.
-2. Navigate to the "XRay-Pneumonia-Detection-App" folder.
-3. Configure the "[config.json](./XRay-Pneumonia-Detection-App/config.json)":
+1. **Copy** the entire GitHub project to your local directory.
+2. Follow the provided above **[instructions](#open_file_folder-model-downloading)** to **[download](#open_file_folder-model-downloading)** the model.
+
+3. **Navigate** to the "XRay-Pneumonia-Detection-App" folder.
+4. **Configure** the "[config.json](./XRay-Pneumonia-Detection-App/config.json)":
     - Specify the model name, if needed
-4. Run [main-GUI.py](./XRay-Pneumonia-Detection-App/main-GUI.py) to launch the user-friendly GUI application.
+5. **Run** [main-GUI.py](./XRay-Pneumonia-Detection-App/main-GUI.py) to launch the user-friendly GUI application.
 
     ```shell
     python3 main-GUI.py     # for Linux/Mac
@@ -274,7 +284,7 @@ If you want to use the ready-to-use application, follow these steps:
 :white_check_mark: To utilize the program, wait for it to load completely, and then drag and drop your image onto the window. Upon doing so, you will observe the following interface:
 
 ---
-
+#### :hammer: Training Your Own Model
 However, if you are interested in training your own model using the provided notebook, you have the flexibility to make changes as per your specific requirements. 
 For instance, you can modify the 
 - dataset directory
