@@ -213,7 +213,7 @@ pip3 install kivymd
 
 ---
 
-:stop_sign: **2**. Once the extraction is complete, you will find a folder named **"model-N" (N is a number of model version)**. Please make sure that the directory includes all the essential files for the model. The structure should be similar, if not identical, to the following:
+:stop_sign: **2**. Once the extraction is complete, you will find a folder named **"model-N" (N is a number of model version)**. Make sure that the directory includes all the essential files for the model. The structure should be similar, if not identical, to the following:
 ```shell
     model-2/
         ├── assets/
