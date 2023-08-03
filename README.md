@@ -203,7 +203,7 @@ pip3 install kivymd
 ## :hammer_and_wrench: Usage
 
 #### :open_file_folder: Model Downloading
-:stop_sign: **1**. Before using the app , you must download it using the following link and then extract it: 
+:stop_sign: **1**. Before using the app , you must download neural network model using the following link and then extract it: 
 
 [MODEL_LINK](https://drive.google.com/file/d/1nQd1YZzLOa8R6WgAesXl_YCGuafEsXGt/view?usp=sharing)
 
@@ -269,7 +269,16 @@ If you want to use the ready-to-use application, follow these steps:
 
 3. **Navigate** to the "XRay-Pneumonia-Detection-App" folder.
 4. **Configure** the "[config.json](./XRay-Pneumonia-Detection-App/config.json)":
-    - Specify the model name, if needed
+    - In the configuration, provide the correct model name that you downloaded, if necessary.
+    
+    ```json
+        "model_file_path": "./assets/model-2",
+    ```
+    or
+    
+    ```json
+        "model_file_path": "./assets/model-1",
+    ```
 5. **Run** [main-GUI.py](./XRay-Pneumonia-Detection-App/main-GUI.py) to launch the user-friendly GUI application.
 
     ```shell
