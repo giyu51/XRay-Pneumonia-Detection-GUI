@@ -214,7 +214,7 @@ pip3 install kivymd
 
 In a nutshell, this is a simple outline of the actions:
 
-1. **DOWNLOAD** model's zip file using this [link](https://drive.google.com/drive/folders/1w2P1wKnjrXs57Wzv9Af8BEREdL3eTEui?usp=sharing) 
+1. **DOWNLOAD** model's zip file using provided abovelink
 
 2. **EXTRACTION:** ["model-N-[some number].zip"](#hammer_and_wrench-usage) **----->** ["model-N-[some number]/"](#hammer_and_wrench-usage)
 
