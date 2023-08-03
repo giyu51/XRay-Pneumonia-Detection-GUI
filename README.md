@@ -205,7 +205,7 @@ pip3 install kivymd
 
 [MODEL_LINK](https://drive.google.com/file/d/1nQd1YZzLOa8R6WgAesXl_YCGuafEsXGt/view?usp=sharing)
 
-:stop_sign: **2**. Once the extraction is complete, you will find a folder named **"model-N (N is a number of model version)"**. 
+:stop_sign: **2**. Once the extraction is complete, you will find a folder named **"model-N-[some numbers]" (N is a number of model version)**. 
 
 :stop_sign: **3**. Inside this folder, there will be a subfolder named **"model-N"** which contains the necessary files for the model.
 
