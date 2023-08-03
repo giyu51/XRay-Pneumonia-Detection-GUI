@@ -249,7 +249,7 @@ XRay-Pneumonia-Detection-App/
                             |       |
                             │       └── model-N/
                             |                   |
-                            |                   └─ [model-content]
+                            |                   └─ [model-content]...
                             |
                             |
                             ├── config.json
