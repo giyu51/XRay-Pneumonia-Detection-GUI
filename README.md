@@ -205,7 +205,11 @@ pip3 install kivymd
 ### :open_file_folder: Model Downloading
 :stop_sign: **1**. Before using the app , you must download neural network model using the following link and then extract it: 
 
+Latest Model Release:  
 [MODEL_LINK](https://drive.google.com/file/d/1nQd1YZzLOa8R6WgAesXl_YCGuafEsXGt/view?usp=sharing)
+
+:open_book: Other model releases availabe in [download_links.txt](download_links.txt).
+
 
 ---
 
