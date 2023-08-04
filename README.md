@@ -208,7 +208,7 @@ pip3 install kivymd
 Latest Model Release:  
 [MODEL_LINK](https://drive.google.com/file/d/1nQd1YZzLOa8R6WgAesXl_YCGuafEsXGt/view?usp=sharing)
 
-:open_book: Other model releases can be found in [download_links.txt](download_links.txt).
+:open_book: Other model releases are availabe in [download_links.txt](download_links.txt).
 
 
 ---
