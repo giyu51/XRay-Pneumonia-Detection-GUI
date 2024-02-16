@@ -7,7 +7,8 @@ from kivy.core.window import Window
 from kivy.clock import Clock
 from kivy.uix.image import Image
 from kivymd.uix.filemanager import MDFileManager
-from kivymd.uix.snackbar import Snackbar
+from kivymd.uix.snackbar import MDSnackbar
+from kivymd.uix.label import MDLabel
 from kivy.lang import Builder
 
 # Other necessary Python modules
@@ -29,6 +30,7 @@ class DropFileLayout(MDBoxLayout):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
         self._color_yellow_ = [1, 0.85, 0.25, 1]
+
 
 class LoadingLayout(MDRelativeLayout):
     pass
@@ -111,8 +113,8 @@ class PneumoniaDetectionApp(MDApp):
                 Window.size = (self.window_width, self.window_height)
 
         except Exception as err:
-            # Show a Snackbar and print the error if there's any issue with the configuration file
-            Snackbar(text=f"ERROR| {err}").open()
+            # Show a MDSnackbar and print the error if there's any issue with the configuration file
+            MDSnackbar(MDLabel(text=f"ERROR| {err}")).open()
             print(f"There is an error: {err}")
 
             # Set default window size if there's an error
@@ -172,7 +174,7 @@ class PneumoniaDetectionApp(MDApp):
                 ":ERROR| PROBABLY, cannot load an image. Ensure image has a correct format.")
             print(f"There is an error: {err}")
 
-            Snackbar(text=f"ERROR| {err}").open()
+            MDSnackbar(MDLabel(text=f"ERROR| {err}")).open()
 
         self.analyzeImage()
 
@@ -216,12 +218,12 @@ class PneumoniaDetectionApp(MDApp):
                 self.predicted_pneumonia_proba)
             self.myIds["_label_class_"].text = str(self.predicted_class)
 
-            Snackbar(
-                text=f"SUCCESS| Image loaded FROM {self.absolute_image_path}").open()
+            MDSnackbar(
+                MDLabel(text=f"SUCCESS| Image loaded FROM {self.absolute_image_path}")).open()
 
         except Exception as err:
             print(f"There is an error: {err}")
-            Snackbar(text=f"ERROR| {err}").open()
+            MDSnackbar(MDLabel(text=f"ERROR| {err}")).open()
 
     # Method to show model information layout (button event)
     def btnModelInfo(self, instance=None):
@@ -243,7 +245,7 @@ class PneumoniaDetectionApp(MDApp):
 
         except Exception as err:
             print(f"There is an error: {err}")
-            Snackbar(text=f"ERROR| {err}").open()
+            MDSnackbar(MDLabel(text=f"ERROR| {err}")).open()
 
         self.changeCurrentWindow(self.model_info_layout)
 
@@ -268,14 +270,13 @@ class PneumoniaDetectionApp(MDApp):
         def exit_manager(*args):
             self.file_manager.close()
             os.remove(self.exportFilename)
-            
 
         def select_path(path):
             if path:
                 save_path = os.path.join(path, self.exportFilename)
                 self.image_widget.export_to_png(save_path)
-                path_snackbar = Snackbar(
-                    text=f"SUCCESS| Image saved AS {save_path}").open()
+                path_snackbar = MDSnackbar(
+                    MDLabel(text=f"SUCCESS| Image saved AS {save_path}")).open()
             exit_manager()
 
         try:
@@ -293,9 +294,9 @@ class PneumoniaDetectionApp(MDApp):
             show_file_manager()
 
         except Exception as err:
-            Snackbar(text=f"ERROR| {err}").open()
+            MDSnackbar(MDLabel(text=f"ERROR| {err}")).open()
             print(f"There is an error: {err}")
-            
+
     # Method to export the results of image analysis (button event)
     def btnExportResults(self, instance=None):
         self.current_date = self.modules_datetime.datetime.now().strftime("%d-%m-%Y_%H:%M:%S")
@@ -321,10 +322,10 @@ class PneumoniaDetectionApp(MDApp):
 
         except Exception as err:
             print(f"No Image Loaded OR error is {err}")
-            Snackbar(text=f"ERROR| {err}").open()
-
+            MDSnackbar(MDLabel(text=f"ERROR| {err}")).open()
 
     # Method to draw a text data on the image
+
     def exportPNG(self, img_array, notes):
         text_canvas = self.modules_np.zeros(
             shape=img_array.shape, dtype=img_array.dtype)
@@ -353,14 +354,14 @@ class PneumoniaDetectionApp(MDApp):
         ready_image = self.modules_np.vstack((img_array, text_canvas))
 
         return ready_image
-    
+
 
 # Entry point of the application
 if __name__ == "__main__":
     # Run the Kivy App
     kivy_app = PneumoniaDetectionApp()
     kivy_app.run()
-    
+
     try:
         os.remove(kivy_app.exportFilename)
     except:
