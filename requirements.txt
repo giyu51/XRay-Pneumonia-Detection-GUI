@@ -1,0 +1,6 @@
+numpy
+matplotlib
+tensorflow
+opencv-python
+kivy
+kivymd==1.2.0
