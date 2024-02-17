@@ -299,7 +299,7 @@ class PneumoniaDetectionApp(MDApp):
 
     # Method to export the results of image analysis (button event)
     def btnExportResults(self, instance=None):
-        self.current_date = self.modules_datetime.datetime.now().strftime("%d-%m-%Y_%H:%M:%S")
+        self.current_date = self.modules_datetime.datetime.now().strftime("%d-%m-%Y_%H%M%S")
 
         try:
 
